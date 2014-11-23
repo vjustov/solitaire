@@ -35,6 +35,6 @@ defmodule SolitaireTest do
   test "calculates the score" do
     assert Solitaire.score([%{suite: :hearts, value: 2}, %{suite: :clubs, value: 4}],10) == 4
     assert Solitaire.score([%{suite: :hearts, value: "K"}, %{suite: :spades, value: 3}],10) == 9
-    assert Solitaire.score([%{suite: :hearts, value: "K"}, %{suite: :diamonds, value: "A"}],12) == 13
+    assert Solitaire.score([%{suite: :hearts, value: "K"}, %{suite: :diamonds, value: "A"}],12) == 27 
   end
 end
